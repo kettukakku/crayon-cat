@@ -1,0 +1,58 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  margin: 5px;
+}
+
+.settings {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 20px;
+}
+
+.settings-block {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2em;
+  border-style: dashed;
+}
+
+.grid-size-settings {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+#grid-size-text {
+  width: 25px;
+  text-align: right;
+  font-weight: 600;
+}
+
+#grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  height: 500px;
+}
+
+.square {
+  background-color: var(--canvas-color);
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+}
+
+.square:hover {
+  background-color: var(--hover-color);
+}
+
+footer {
+  text-align: center;
+}

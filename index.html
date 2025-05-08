@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+  <script src="main.js" defer></script>
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+    <div class="settings">
+        <div class="settings-block">
+            <p>Grid Size</p>
+            <div class="grid-size-settings">
+                <p id="grid-size-text">16</p>
+                <input type="range" min="4" , max="100" oninput="updateGridText(this.value)" onchange="updateGridSize(this.value)"></input>
+            </div>
+        </div>
+        <div class="settings-block">
+            <p>Canvas Color</p>
+            <input type="color" value="#ffe4c4" onchange="updateCanvasColor(this.value)"></input>
+        </div>
+        <div class="settings-block">
+            <p>Crayon Color</p>
+            <input type="color" value="#8b4513" onchange="updateCrayonColor(this.value)"></input>
+        </div>
+    </div>
+    
+  <div id="grid-container"></div>
+</body>
+<footer>
+  <p>
+    <small>Copyright © 2025 Meowby</small>
+  </p>
+</footer>
